@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = 10, b = 3, c = 40;
+		if(a > b && a > c) {
+			alert(a * 20);
+			if(b > c) {
+				alert(b * 10);
+				alert(c * 5);
+			} else {
+				alert(c * 10);
+				alert(b * 5);
+			}
+		} else if (b > a && b > c) {
+			alert(b * 20);
+			if(a > c) {
+				alert(a * 10);
+				alert(c * 5);
+			} else {
+				alert(c * 10);
+				alert(a * 5);
+			}
+		} else if (c > a && c > b) {
+			alert(c * 20);
+			if(a > b) {
+				alert(a * 10);
+				alert(b * 5);
+			} else {
+				alert(b * 10);
+				alert(a * 5);
+			}
+		}
+	</script>
+	<script type="text/javascript">
+		var a = 10, b = 3, c = 40, d = 20;
+		if(a > b && a > c && a > d) {
+			alert(a * 20);
+			if (b > c && b > d) {
+				alert(b * 10);
+				if (c > d) {
+					alert(c * 5);
+				} else {
+					alert(d * 5);
+				}
+			} else if (c > d && c > b) {
+				alert(c * 10);
+				if (d > b) {
+					alert(d * 5);
+				} else {
+					alert(b * 5);
+				}
+
+			} else if (d > b && d > c) {
+				alert(d * 10);
+				if (b > c) {
+					alert(b * 5);
+				} else {
+					alert(c * 5);
+				}
+			}
+		} else if (b > a && b > c && b > d) {
+			alert(b * 20);
+			if (a > c && a > d) {
+				alert(a * 10);
+				if (c > d) {
+					alert(c * 5);
+				} else {
+					alert(d * 5);
+				}
+			} else if (c > a && c > d) {
+				alert(c * 10);
+				if (a > d) {
+					alert(a * 5);
+				} else {
+					alert(d * 5);
+				}
+			} else if (d > a && d > c) {
+				alert(d * 10);
+				if (a > c) {
+					alert(a * 5);
+				} else {
+					alert(c * 5);
+				}
+			}
+		} else if (c > a && c > b && c > d) {
+			alert(c * 20);
+			if (a > b && a > d) {
+				alert(a * 10);
+				if (b > d) {
+					alert(b * 5);
+				} else {
+					alert(d * 5);
+				}
+			} else if (b > a && b > d) {
+				alert(b * 10);
+				if (a > d) {
+					alert(a * 5);
+				} else {
+					alert(d * 5);
+				}
+			} else if (d > a && d > b) {
+				alert(d * 10);
+				if (a > b) {
+					alert(a * 5);
+				} else {
+					alert(b * 5);
+				}
+			}
+		} else if (d > a && d > b && d > c) {
+			alert(d * 20);
+			if (a > b && a > c) {
+				alert(a * 10);
+				if (b > c) {
+					alert(b * 5);
+				} else {
+					alert(c * 5);
+				}
+			} else if (b > a && b > c) {
+				alert(b * 10);
+				if (a > c) {
+					alert(a * 5);
+				} else {
+					alert(c * 5);
+				}
+			} else if (c > a && c > b) {
+				alert(c * 10);
+				if (a > b) {
+					alert(a * 5);
+				} else {
+					alert(b * 5);
+				}
+			}
+		}
+	</script>
+</body>
+</html>
