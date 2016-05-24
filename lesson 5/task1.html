@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson5</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+		function rand (min, max) {
+		 return Math.floor(Math.random() * (max - min)) + min;
+		}
+		
+		
+		var mas = [];
+		for (var i=0; i<10; i++) {
+	        mas[i] = []; 	
+			for (var j=0; j<10; j++) {	            
+				mas[i][j] = rand (1, 100);
+			}			
+		}
+		
+		console.table(mas);	
+		
+		
+		var arr = mas;
+		var result = [];				
+		for (var i = 0; i < arr.length; i++){
+		    result[arr.length-1-i] = [];
+			for (var j=0; j<arr[i].length; j++) {
+				result[arr.length-1-i][arr[i].length-1-j] = arr[i][j];
+			}	            				
+		}
+		console.table(result);
+	
+	</script>
+</body>
+</html>
