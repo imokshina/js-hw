@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Count(){
+			var counter = 0;
+			return function countMe() {
+			   return counter++; 
+			}
+		}
+		var resalt = Count();
+
+		console.log( resalt() );
+		console.log( resalt() );
+		console.log( resalt() );
+		console.log( resalt() );
+		console.log( resalt() );
+		console.log( resalt() );
+			
+	</script>
+</body>
+</html>
