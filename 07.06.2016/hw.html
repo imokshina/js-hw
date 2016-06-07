@@ -1,0 +1,31 @@
+<script>
+
+        var arr = [];
+
+        for (var i = 0; i < 10; i++) {
+            arr[i] = [];
+            for (var j = 0; j < 10; j++) {
+                arr[i][j] = {chip: false, opened: false}
+            }
+        }
+
+        console.log(arr);
+
+        function fire(x,y) {
+            if(validate(x,y)) {
+                showMessage('попал!!!');
+            } else {
+                showMessage('мимо!!!');
+            }
+
+        }
+
+        function showMessage(message) {
+            console.log(message);
+        }
+
+        function validate(x,y) {
+            return arr[x][y].chip;
+        }
+
+    </script>
